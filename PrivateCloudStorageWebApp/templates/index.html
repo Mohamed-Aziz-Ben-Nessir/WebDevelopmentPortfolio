@@ -1,0 +1,54 @@
+{% extends "base.html" %}
+
+{% block content %}
+<section style="background-color: #2978ee">
+  <div class="container mx-auto px-6 text-center py-20">
+    <h2 class="mb-6 text-4xl font-bold text-center text-white">
+      ISI Cloud 
+    </h2>
+    <h3 class="my-4 text-2xl text-white">
+      a small app to store and share files for isi students ! 
+    </h3>
+    <button
+       class="bg-white font-bold rounded-full mt-6 py-4 px-8 shadow-lg uppercase tracking-wider"
+    >
+    <a class="px-4 font-bold" href="{{ url_for('auth.signup') }}">SignUp</a>
+    </button>
+  </div>
+</section>
+<section class="container mx-auto px-6 p-10">
+  <h2 class="text-4xl font-bold text-center text-gray-800 mb-8">
+    Features
+  </h2>
+  <div class="flex items-center flex-wrap mb-20">
+    <div class="w-full md:w-1/2">
+      <h4 class="text-3xl text-gray-800 font-bold mb-3">Store Files</h4>
+      <p class="text-gray-600 mb-8">you will be able to store any type of files under your personal directory in our unix-like file system and download them again later when you need to.
+      </p>
+    </div>
+    <div class="w-full md:w-1/2">
+      <img src="/static/download.png" alt="" />
+    </div>
+  </div>
+
+  <div class="flex items-center flex-wrap mb-20">
+    <div class="w-full md:w-1/2">
+      <img src="/static/share.png" alt="" />
+    </div>
+    <div class="w-full md:w-1/2 pl-10">
+      <h4 class="text-3xl text-gray-800 font-bold mb-3">Share Files</h4>
+      <p class="text-gray-600 mb-8">you can mail your self the selected file any time and then forward it to who ever you want.</p>
+    </div>
+  </div>
+
+  <div class="flex items-center flex-wrap mb-20">
+    <div class="w-full md:w-1/2">
+      <h4 class="text-3xl text-gray-800 font-bold mb-3">View on the go</h4>
+      <p class="text-gray-600 mb-8">your able to examin the files you uploaded on your browser without having to download them again</p>
+    </div>
+    <div class="w-full md:w-1/2">
+      <img src="/static/view.png" alt="" />
+    </div>
+  </div>
+</section>
+{% endblock %}
